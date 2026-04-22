@@ -17,7 +17,7 @@ def process_request():
 
 def palindrome(str: str) -> str:
     dq = deque()
-    [dq.append(x) for x in "".join(str)]
+    [dq.append(x) for x in "".join(str.lower())]
     while dq:
         if len(dq) == 1:
             break
